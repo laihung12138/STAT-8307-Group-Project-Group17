@@ -22,8 +22,15 @@ The repository is organized as follows:
 
 ## How to Use
 
+### 1. Retrieve datasets from Hugging Face
 
-### 1. Exploratory Data Analysis (EDA)
+To download datasets from hugging face, run the `Retrieve_data_from_hugging_face.py` script:
+
+```bash
+python Retrieve_data_from_hugging_face.py
+```
+
+### 2. Exploratory Data Analysis (EDA)
 
 To perform EDA on the dataset, run the `eda.py` script:
 
@@ -35,7 +42,7 @@ The script will output visualizations and summary statistics, helping to underst
 
 ---
 
-### 2. Running Models
+### 3. Running Models
 
 To train and evaluate models, execute the `main.py` script:
 
