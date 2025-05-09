@@ -205,10 +205,10 @@ def run_error_analysis(processed_df, output_dir, use_features=False):
 
     # Compare average scores
     print("\nAverage Complexity Scores:")
-    print(processed_df.groupby('is_correct')[['flesch_ease', 'flesch_kincaid', 'difficult_words', 'dale_chall']].mean())
+    print(processed_df.groupby('is_correct')[['difficult_words']].mean())
 
     # Plot distributions
-    complexity_metrics = ['flesch_ease', 'flesch_kincaid', 'difficult_words', 'dale_chall']
+    complexity_metrics = ['difficult_words']
     for metric in complexity_metrics:
         plt.figure(figsize=(10, 5))
         sns.histplot(data=processed_df, x=metric, hue='is_correct', kde=True, bins=40)
