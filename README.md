@@ -14,7 +14,7 @@ The repository is organized as follows:
 - **`data_preprocessing.py`**: Functions for cleaning and preparing the raw data for training.
 - **`distilbert_lora_inference_utils.py`**: Utilities for inference using DistilBERT models trained with LoRA (Low-Rank Adaptation).
 - **`error_analysis.py`**: Tools for analyzing model errors and visualizing the results.
-- **`model_training.py`**: Contains training functions for all available models.
+- **`model_training.py`**: Contains training functions for LSTM models.
 - **`models.py`**: Defines the architecture of machine learning models, including DistilBERT, SGD, Naive Bayes, and LSTM.
 - **`split_raw_data_to_csv.py`**: Splits the raw dataset into training, validation, and test subsets.
 
